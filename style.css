@@ -1,0 +1,123 @@
+body {
+	font-size: 15px;
+	font-family: 'Lexend Deca', sans-serif;
+	color: hsla(0, 0%, 100%, 0.75);
+	background-color: hsl(0, 0%, 95%);
+}
+.main {
+	display: flex;
+	border-top-right-radius: 30px;
+	justify-content: center;
+
+}
+.main div {
+	height: 72vh;
+	width: 20vw;
+	margin-top: 10vh;
+}
+.content {
+	margin-top: 6vh;
+	margin-left: 3vw;
+}
+.content h1 {
+	color: white;
+	font-family: 'Big Shoulders Display', cursive;
+}
+.content p {
+	width: 15vw;
+}
+.sedans {
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	background-color: hsl(31, 77%, 52%);
+}
+.suvs {
+	background-color: hsl(184, 100%, 22%);
+}
+.luxury {
+	background-color: hsl(179, 100%, 13%);
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+.button {
+	position: absolute;
+	border-radius: 30px;
+	border-color: hsl(0, 0%, 95%);
+	background-color:hsl(0, 0%, 95%);
+	border-style: solid;
+	padding: 10px;
+	width: 10vw;
+	top: 70vh;
+	transition: 0.4s ease-in-out;
+}
+.btnsed {
+	color: hsl(31, 77%, 52%);
+}
+.btnsuv {
+	color: hsla(184, 100%, 22%);
+}
+.btnlux {
+	color: hsl(179, 100%, 13%);
+}
+
+.button:hover {
+	color: hsla(0, 0%, 100%, 0.75);
+	border-color: hsla(0, 0%, 100%, 0.75);
+}
+.btnsed:hover {
+	background-color: hsl(31, 77%, 52%);
+}
+.btnsuv:hover {
+	background-color: hsla(184, 100%, 22%);
+}
+.btnlux:hover {
+	background-color: hsl(179, 100%, 13%);
+}
+
+.attribution { 
+	font-size: 11px;
+	text-align: center;
+	position: relative;
+	color: hsl(210, 47%, 46%);
+	top:10vh; }
+.attribution a { 
+	color: hsl(228, 45%, 44%);
+	text-decoration: none;}
+
+
+@media only screen and (max-width: 375px) {
+	.main {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.main div {
+		margin-top: 0;
+		width: 85vw;
+		height: 60vh;
+	}
+	.sedans {
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: 0px;
+}
+.luxury {
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 0px;
+
+}
+.content {
+	margin-left: 0;
+	padding-top: 5vh; 
+	padding-left: 10vw;
+}
+.content p {
+	width: 65vw;
+}
+.button {
+	position: relative;
+	top: 3vh;
+	width: 35vw;
+}
+}
