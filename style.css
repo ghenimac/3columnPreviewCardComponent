@@ -85,7 +85,7 @@ body {
 	text-decoration: none;}
 
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 620px) {
 	.main {
 		flex-direction: column;
 		align-items: center;
